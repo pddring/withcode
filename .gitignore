@@ -2,3 +2,4 @@ build/
 dist/
 withcode.egg-info/
 __pycache__/
+ignore/
