@@ -4,7 +4,7 @@ withcode
 Offline python module to match visualisation and sound features of create.withcode.uk
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = 'Pete Dring'
 
 import tkinter

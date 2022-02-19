@@ -3,7 +3,7 @@ import withcode
 setup(
     name='withcode',
     version=withcode.__version__,    
-    description='Offline python module to match visualisation and sound features of create.withcode.uk',
+    long_description='Offline python module to match visualisation and sound features of create.withcode.uk',
     url='https://github.com/pddring/withcode',
     author='Pete Dring',
     author_email='pddring@gmail.com',
