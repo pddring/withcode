@@ -16,7 +16,7 @@ class Image:
         self._canvas = None
     
     # draw an image from a 2d list of pixel data
-    def draw(self, data, width=200, height=200):
+    def draw(self, data, width=200, height=200, drawGrid = True):
         global _win, _canvas
         
         # create window if one doesn't already exist
@@ -81,7 +81,10 @@ class Image:
                     g = hex(pixel[1])[2:].zfill(2)
                     b = hex(pixel[2])[2:].zfill(2)
                     fill = "#{}{}{}".format(r, g, b)
-                self._canvas.create_rectangle(x * box_w, y * box_h, (x+1) * box_w, (y+1) * box_h, fill=fill)
+                color = fill
+                if drawGrid:
+                    color = "black"
+                self._canvas.create_rectangle(x * box_w, y * box_h, (x+1) * box_w, (y+1) * box_h, fill=fill, outline=color)
         _win.update()
 
 # test: should draw a 8x8 grid changing the amount of red and green
